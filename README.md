@@ -19,7 +19,7 @@ This was just a couple of nights of coding, to get a proof of concept up and run
 
 ### Run application
 
-    nodejs SmarterPrecondition.js
+    node SmarterPrecondition.js
 
 ## Use of calendar
 For any events having the default duration of one hour, the AC is only turned on once, and left alone until shut down by itself or interrupted by user, by turning on the car or turning AC off from mobile app.

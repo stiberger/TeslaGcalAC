@@ -1,4 +1,5 @@
 /**
+ * Mortens branch
  * @todo
  * [ ] Use Token on getEvents, to only get updates. No need to clear and refresh entire job queue every time.
  * [x] If event more than one hour, set up multiple cron events for starting air condition every 29 mins.
@@ -44,7 +45,8 @@ calendar.authorize(function() {
 		calendar.intervalCheck('0 9-59/10 * * * *', function() {
 			calendar.getEvents(function(event) {
 				calendar.setEvent(event.start, function() {
-					var temp = event.description.match(/^\d\d$/i) ? event.description : 20;
+					// var temp = event.description.match(/^\d\d$/i) ? event.description : 20;
+					var temp = 20;
 					car.startAircondition(temp);
 				});
 			});

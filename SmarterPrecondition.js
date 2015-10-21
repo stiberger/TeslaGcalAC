@@ -45,7 +45,7 @@ calendar.authorize(function() {
 		calendar.intervalCheck('0 9-59/10 * * * *', function() {
 			calendar.getEvents(function(event) {
 				calendar.setEvent(event.start, function() {
-					// var temp = event.description.match(/^\d\d$/i) ? event.description : 20;
+					//var temp = event.description.match(/\d\d/) ? event.description : 20;
 					var temp = 20;
 					car.startAircondition(temp);
 				});
